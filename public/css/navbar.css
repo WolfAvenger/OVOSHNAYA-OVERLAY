@@ -1,0 +1,156 @@
+@font-face {
+    src: url(../fonts/futuraround.ttf);
+    font-family: "futura";
+}
+
+@font-face {
+    src: url(../fonts/noodle.ttf);
+    font-family: "noodle";
+}
+
+.link, .link:active, .link:link, .link:visited  {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: #ecf0f1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    /* background */
+}
+
+#nav{
+    height: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F46523;
+    width: 100%;
+    border: 1px solid #F46523;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+.nav-image{
+    margin:0;
+    padding:0;
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    left: 0;
+}
+#main-logo{
+    height: 80px;
+    margin:0;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    height: 85px;
+    width: 70%;
+}
+
+.nav-elem, .nav-elem-contacts {
+    width: 150px;
+    height: 80px;
+    list-style-type: none;
+    font-family: sans-serif;
+    font-weight: 800;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: .25s;
+    margin: 0 10px;
+    font-family: "noodle";
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 20pt;
+    color: #ecf0f1;
+    border: 1px solid #F46523;
+    background-color: #F46523;
+}
+
+.nav-elem > ul{
+    position: absolute;
+    top: 80px;
+    color: black;
+    list-style-type: none;
+    font-size: 12pt;
+    margin:0;
+    padding:0;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.nav-elem > ul li {
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-top: 1px solid #F46523;
+}
+
+.nav-elem-teams > ul li > p {
+    margin: 0 auto;
+}
+
+.nav-elem-teams:hover > ul{
+    display: block;
+}
+
+.nav-elem:hover{
+    color: #e67e22;
+    background-color: #ecf0f1;
+    box-shadow: 0 0 15px #ecf0f1;
+    cursor: pointer;
+}
+
+.nav-elem-contacts {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.fab {
+    font-size: 20pt;
+    transition: .2s;
+    border-radius: 100%;
+}
+
+.fa-vk:hover{
+    color: #4C75A3;
+    transition: .2s;
+}
+
+.fa-discord:hover{
+    color: #7289da;
+    transition: .2s;
+}
+
+.fa-twitch:hover{
+    color: #6441a5;
+    transition: .2s;
+}
+
+.fa-youtube:hover{
+    color: #c4302b;
+    transition: .2s;
+}

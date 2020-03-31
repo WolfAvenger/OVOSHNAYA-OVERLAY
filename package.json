@@ -1,0 +1,24 @@
+{
+  "name": "ovoshnaya_site",
+  "version": "0.0.1-prealpha",
+  "description": "site for ovoshnaya league",
+  "main": "public/script/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ovleague"
+  ],
+  "author": "Gurin Simon (КОПАТЫЧ)",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2"
+  },
+  "dependencies": {
+    "overwatch-stats-api": "^2.0.6",
+    "overwatchleague": "^2.2.1"
+  }
+}
